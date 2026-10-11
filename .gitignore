@@ -11,6 +11,9 @@ ghver.txt
 # Portable GitHub CLI (extracted here for convenience; not part of the site)
 .ghcli/
 
+# Local deploy helper (machine-specific; not part of the site)
+deploy-github.ps1
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db

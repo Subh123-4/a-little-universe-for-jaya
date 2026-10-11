@@ -13,6 +13,7 @@ ghver.txt
 
 # Local deploy helper (machine-specific; not part of the site)
 deploy-github.ps1
+push-to-github.ps1
 
 # OS / editor cruft
 .DS_Store

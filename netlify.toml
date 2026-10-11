@@ -1,0 +1,23 @@
+# Netlify build configuration
+# This is a fully static site (single index.html with CDN assets), so there is
+# no build step — Netlify just publishes the files as-is.
+
+[build]
+  # Publish the project root (where index.html lives)
+  publish = "."
+  # No build command needed for a static site
+  command = ""
+
+# Sensible default headers + caching
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache the main HTML for a short time so updates show up quickly
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

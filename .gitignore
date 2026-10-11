@@ -1,0 +1,12 @@
+# Ignore downloaded installers and helper files that are not part of the site
+git-installer.exe
+winget.log
+winget.err
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# (Intentionally NOT ignoring netlify.toml — it belongs in the repo)

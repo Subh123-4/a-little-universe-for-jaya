@@ -1,7 +1,15 @@
 # Ignore downloaded installers and helper files that are not part of the site
 git-installer.exe
+gh.zip
+gh.msi
 winget.log
 winget.err
+gh.log
+gh.err
+ghver.txt
+
+# Portable GitHub CLI (extracted here for convenience; not part of the site)
+.ghcli/
 
 # OS / editor cruft
 .DS_Store
@@ -10,3 +18,4 @@ Thumbs.db
 *.log
 
 # (Intentionally NOT ignoring netlify.toml — it belongs in the repo)
+
